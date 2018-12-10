@@ -5,7 +5,7 @@ const base64 = require('base-64');
 const jwt = require('jsonwebtoken');
 const cookie = require('cookie');
 const fs = require('fs');
-const localhost = (process.env.PLATFORM === 'linux') ? 'localhost' : 'host.docker.internal';
+const localhost = (process.env.PLATFORM === 'linux') ? 'localhost' : 'docker.for.mac.localhost';
 const protocol = (process.env.SSL === 'true') ? 'https' : 'http';
 const port = process.env.PORT || 8002;
 
